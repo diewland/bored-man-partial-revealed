@@ -2,7 +2,7 @@ import json
 
 # config
 FROM_ID      = 1
-TO_ID        = 185
+TO_ID        = 200
 IMAGE_IPFS   = 'https://diewland.github.io/bored-man-partial-revealed/assets'
 #
 INPUT_PATH   = '../bored-man/json_final'
