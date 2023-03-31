@@ -1,0 +1,1 @@
+# bored-man-partial-revealed
