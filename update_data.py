@@ -1,15 +1,28 @@
-import json
+import json, shutil
 
-# config
+# reveal range
 FROM_ID      = 1
-TO_ID        = 200
+TO_ID        = 207
+
+# ipfs
 IMAGE_IPFS   = 'https://diewland.github.io/bored-man-partial-revealed/assets'
-#
+
+# json
 INPUT_PATH   = '../bored-man/json_final'
 OUTPUT_PATH  = './json'
 
+# image
+SRC_IMG_PATH = '../bored-man-assets-final'
+DST_IMG_PATH = './assets'
+
 # process each id
 for id in range(FROM_ID, FROM_ID+TO_ID):
+
+    # copy image file
+    src_img = "{}/{}.png".format(SRC_IMG_PATH, id)
+    dest_img = "{}/{}.png".format(DST_IMG_PATH, id)
+    #print(src_img, '->', dest_img)
+    shutil.copyfile(src_img, dest_img)
 
     # prepare paths
     src_path = "{}/{}.json".format(INPUT_PATH, id)
