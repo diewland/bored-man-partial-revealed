@@ -2,7 +2,7 @@ import json, shutil
 
 # reveal range
 FROM_ID      = 1
-TO_ID        = 207
+TO_ID        = 210
 
 # ipfs
 IMAGE_IPFS   = 'https://diewland.github.io/bored-man-partial-revealed/assets'
