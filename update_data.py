@@ -1,8 +1,8 @@
 import json, shutil
 
 # reveal range
-FROM_ID      = 1
-TO_ID        = 211
+FROM_ID      = 212
+TO_ID        = 213
 
 # ipfs
 IMAGE_IPFS   = 'https://diewland.github.io/bored-man-partial-revealed/assets'
@@ -16,7 +16,7 @@ SRC_IMG_PATH = '../bored-man-assets-final'
 DST_IMG_PATH = './assets'
 
 # process each id
-for id in range(FROM_ID, FROM_ID+TO_ID):
+for id in range(FROM_ID, TO_ID+1):
 
     # copy image file
     src_img = "{}/{}.png".format(SRC_IMG_PATH, id)
