@@ -1,8 +1,8 @@
 import json, shutil
 
 # reveal range
-FROM_ID      = 212
-TO_ID        = 213
+FROM_ID      = 214
+TO_ID        = 214
 
 # ipfs
 IMAGE_IPFS   = 'https://diewland.github.io/bored-man-partial-revealed/assets'
